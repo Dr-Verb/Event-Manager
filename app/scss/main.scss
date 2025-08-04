@@ -1,0 +1,13 @@
+@import "generic/reset";
+
+@import "settings";
+
+@import "elements/header";
+@import "elements/footer";
+
+#app.container{
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    
+}

@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-const exercisePath = "/";
+// const exercisePath = "app/";
 
 
 ///// trzeba uruchomić JSON SERWER!!! 
@@ -18,10 +18,10 @@ const exercisePath = "/";
  * Don't change those lines below
  */
 export default defineConfig({
-  root: exercisePath,
+  // root: exercisePath,
   server: {
     port: 3000,
-    host: true,
+    host: true, //Podgląd na zdalnym komputerze
   },
   plugins: [react()],
 });

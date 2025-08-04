@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@admin.co"
+    },
+    {
+      "id": 2,
+      "username": "a",
+      "password": "a",
+      "email": "a@a.a"
+    }
+  ],
+  "events": [
+    {
+      "id": "MZW/1/2025",
+      "title": "Odpadajacy tynk",
+      "description": "W dużym pokoju pojawiła sie rysa na tynku, która zaczęła odpadać",
+      "note": "30.08.2025 - odbyła się wizyta serwisowa. Zweryfikowano problem",
+      "stats": "in progress"
+    }
+  ]
+}

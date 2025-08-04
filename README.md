@@ -48,5 +48,24 @@ _**Dalsze możliwości rozwoju aplikacji:**_
 > - wprowadzenie kalendarza z zadaniami do usunięcia przez siły własne / wykonawcę zastępczego,
 > - i na pewno w miarę używania jeszcze na pewno dojdzie parę pomysłów 😊
 
+_**Instalacja aplikacji:**_
+
+```install
+git clone https://github.com/Dr-Verb/Event-Manager.git
+cd Event-Manager
+npm install
+```
+
+_**Uruchomienie aplikacji:**_
+
+```run
+npm run dev
+```
+
+aplikacja dostępna pod adresem [localhost:3000](http://localhost:3000/)
+
+
 ___
-_Start: 30.07.2025r._
++ _30.07.2025r. - Założenie Projektu_
++ _03.08.2025r. - Struktura folderów, konfiguracja JSON SERWER i VITE, sprawdzenie działania serwerów oraz konfiguracji_
++ _04.08.2025r. - Wstępna budowa strony_
