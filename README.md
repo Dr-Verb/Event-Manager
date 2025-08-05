@@ -69,3 +69,4 @@ ___
 + _30.07.2025r. - Założenie Projektu_
 + _03.08.2025r. - Struktura folderów, konfiguracja JSON SERWER i VITE, sprawdzenie działania serwerów oraz konfiguracji_
 + _04.08.2025r. - Wstępna budowa strony_
++ _05.08.2025r. - Zmiana ustawien JSON SERWERA + Logowanie_
