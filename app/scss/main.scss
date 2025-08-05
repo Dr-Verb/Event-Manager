@@ -1,4 +1,4 @@
-@import "generic/reset";
+//@import "generic/reset"; //powoduje Ostrzeżęnia w narzędziach deweloperskich; 
 
 @import "settings";
 
@@ -10,4 +10,8 @@
     flex-direction: column;  
     height: 100%;
     
+}
+.main{
+    display: flex;
+    flex-direction: row;
 }
