@@ -1,6 +1,4 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'; 
+
 
 
 function FooterBar(){

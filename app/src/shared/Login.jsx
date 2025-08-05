@@ -1,7 +1,5 @@
-// import { FormControl } from "@mui/material";
-
 import useLogin from "../hooks/useLogin";
-// import { StyledButton, StyledInput, Wrapper } from "../shared";
+
 
 const Login = () => {
   const {
@@ -16,11 +14,11 @@ const Login = () => {
   return (
     
         <>
-        {console.log(isLogged)}
+
         {isLogged ? (
-        <div>Welcome, {localStorage.getItem("user")}</div>
+        <strong>Witaj, {localStorage.getItem("user")}</strong>
       ) : (
-          <form>
+          <form style={({display: 'inline-block'})}>
             <input type="text" placeholder="Login" value={username}
               onChange={(e) => setUsername(e.target.value)}/>
             <input type="password" placeholder="Hasło" value={password}
@@ -28,8 +26,8 @@ const Login = () => {
             
         </form>
       )}
-      <button type="submit" onClick={handleSubmit}>
-              {isLogged ? "Logout" : "Login"}
+      <button style={({display: 'inline-block'})}type="submit" onClick={handleSubmit}>
+              {isLogged ? "Wyloguj" : "Zaloguj"}
               </button>
         </>
   );

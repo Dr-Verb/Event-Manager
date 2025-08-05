@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Login  from "../shared/Login";
-import LoginForm from "../components/LoginForm";
+
 
 
 function HeaderBar(){
@@ -14,7 +14,7 @@ function HeaderBar(){
         <div className="header__logo">LOGO FIRMY</div>
         
         <div> 
-            {/* <LoginForm /> */}
+     
             <Login />
             
             Sekcja Logowania + rejestracja 
