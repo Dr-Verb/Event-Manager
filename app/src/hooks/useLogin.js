@@ -15,8 +15,11 @@ const useLogin = () => {
         const response = await fetch(url);
         const data = await response.json();
         if (data.length > 0) {
-
+      
           localStorage.setItem("user", username);
+          localStorage.setItem("userLVL", data[0].usrlvl);
+          localStorage.setItem("invest", data[0].invest);
+
           logIn();
           setPassword("");
           setUsername("");

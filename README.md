@@ -70,3 +70,5 @@ ___
 + _03.08.2025r. - Struktura folderów, konfiguracja JSON SERWER i VITE, sprawdzenie działania serwerów oraz konfiguracji_
 + _04.08.2025r. - Wstępna budowa strony_
 + _05.08.2025r. - Zmiana ustawien JSON SERWERA + Logowanie_
++ _06.08.2025r. - Dodoanie rekordów do bazy danych_
++ _07.08.2025r. - Przebudowanie rekordów w bazie danych; Testy poprawności pobieranych danych; Poprawki w Logowaniu_

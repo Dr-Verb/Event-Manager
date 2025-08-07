@@ -24,11 +24,14 @@ const Login = () => {
             <input type="password" placeholder="Hasło" value={password}
               onChange={(e) => setPassword(e.target.value)}/>
             
-        </form>
+          </form>
       )}
-      <button style={({display: 'inline-block'})}type="submit" onClick={handleSubmit}>
-              {isLogged ? "Wyloguj" : "Zaloguj"}
-              </button>
+          <button style={({display: 'inline-block'})}type="submit" onClick={handleSubmit}>
+            {isLogged ? "Wyloguj" : "Zaloguj"}
+          </button>
+          {!isLogged && (<button style={({display: 'inline-block'})}type="submit" onClick={handleRegister}>Rejestracja</button>) //handle do poprawy raczej przejście do strony rejestracji  
+          }
+          <br/>
         </>
   );
 };

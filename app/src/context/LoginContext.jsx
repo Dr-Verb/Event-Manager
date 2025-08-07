@@ -13,7 +13,9 @@ const LoginProvider = ({ children }) => {
   };
   const logOut = () => {
     localStorage.removeItem("userIsLoggedIn");
-    localStorage.removeItem("username");
+    localStorage.removeItem("user");
+    localStorage.removeItem("userLVL");
+    localStorage.removeItem("invest");
     setIsLogged(false);
     navigate("/");
   };
@@ -23,7 +25,7 @@ const LoginProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (isLogged) {
+    if (isLogged === false) {
       navigate("/");
     }
   }, [isLogged, navigate]);
