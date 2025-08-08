@@ -27,11 +27,13 @@ const LoginProvider = ({ children }) => {
     if (isLogged === false) {
       navigate("/");
     }else navigate("/events");
-  }, [isLogged, navigate]);
+  }, [isLogged, navigate, selectedInvest]);
 
    useEffect(() => {
     if (localStorage.getItem("userIsLoggedIn") === "true") setIsLogged(true);
   }, []);
+
+  
 
 
 

@@ -72,4 +72,4 @@ ___
 + _05.08.2025r. - Zmiana ustawien JSON SERWERA + Logowanie_
 + _06.08.2025r. - Dodoanie rekordów do bazy danych_
 + _07.08.2025r. - Przebudowanie rekordów w bazie danych; Testy poprawności pobieranych danych; Poprawki w Logowaniu_ 
-+ _08.08.2025r. - Dołożóny wybór inwestycji i pobieranie pozostałych danych w zależności od wybranej inwestycji_
++ _08.08.2025r. - Dołożony wybór inwestycji i pobieranie pozostałych danych w zależności od wybranej inwestycji; Wyświetlanie zgłoszeń z danej inwestycji; Wykonano paginację wyświetlanych wyników; rozszerzono baze danych aby przetestować paginację; Dodano bibliotekę ZOD, która będzie wykorzystywana do sprawdzania formularzy (przy rejestracji Użytkownika) do package.json_
