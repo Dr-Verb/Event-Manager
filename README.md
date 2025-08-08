@@ -21,14 +21,14 @@ _Aplikacja miała by za zadanie wspierać pracę i organizację pracy w dziale g
 
 
 ### _Założenia Podstawowe:_
-- [ ] Aplikacja się uruchamia.
+- [X] Aplikacja się uruchamia.
 - [X] Projekt zgodny z ustalonym tematem między kursantem a mentorem.
-- [ ] Aplikacja musi wykorzystywać bibliotekę React.
-- [ ] Aplikacja musi wykorzystywać stan lokalny.
-- [ ] Poprawne zarządzanie stanem aplikacji (Redux, Context API, itp.).
-- [ ] Aplikacja wykorzystuje odpowiednie lifecycle methods lub hooki (np. useEffect) do zarządzania cyklem życia komponentów.
+- [X] Aplikacja musi wykorzystywać bibliotekę React.
+- [X] Aplikacja musi wykorzystywać stan lokalny.
+- [X] Poprawne zarządzanie stanem aplikacji (Redux, Context API, itp.).
+- [X] Aplikacja wykorzystuje odpowiednie lifecycle methods lub hooki (np. useEffect) do zarządzania cyklem życia komponentów.
 - [ ] Poprawna obsługa formularzy - zarówno kontrolowanych jak i niekontrolowanych, w zależności od potrzeb projektu.
-- [ ] Wykorzystanie routingu - aplikacja ma odpowiednio skonfigurowane routy przy użyciu React Router lub innej biblioteki do routingu.
+- [X] Wykorzystanie routingu - aplikacja ma odpowiednio skonfigurowane routy przy użyciu React Router lub innej biblioteki do routingu.
 - [ ] Aplikacja jest responsywna - poprawne dostosowanie wyglądu do różnych rozmiarów ekranu za pomocą CSS media queries lub bibliotek do responsywnego designu.
 - [ ] Brak występowania błędów krytycznych na poziomie konceptualnym - aplikacja działa zgodnie z oczekiwaniami i nie zawiera fundamentalnych błędów logicznych
 
@@ -71,4 +71,5 @@ ___
 + _04.08.2025r. - Wstępna budowa strony_
 + _05.08.2025r. - Zmiana ustawien JSON SERWERA + Logowanie_
 + _06.08.2025r. - Dodoanie rekordów do bazy danych_
-+ _07.08.2025r. - Przebudowanie rekordów w bazie danych; Testy poprawności pobieranych danych; Poprawki w Logowaniu_
++ _07.08.2025r. - Przebudowanie rekordów w bazie danych; Testy poprawności pobieranych danych; Poprawki w Logowaniu_ 
++ _08.08.2025r. - Dołożóny wybór inwestycji i pobieranie pozostałych danych w zależności od wybranej inwestycji_

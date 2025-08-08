@@ -5,6 +5,8 @@ const LoginContext = createContext(false);
 
 const LoginProvider = ({ children }) => {
   const [isLogged, setIsLogged] = useState(false);
+  const [invest, setInvest] = useState([]);
+  const [selectedInvest, setSelectedInvest] = useState('');
   const navigate = useNavigate();
 
   const logIn = () => {
@@ -20,17 +22,21 @@ const LoginProvider = ({ children }) => {
     navigate("/");
   };
 
-  useEffect(() => {
-    if (localStorage.getItem("userIsLoggedIn") === "true") setIsLogged(true);
-  }, []);
 
   useEffect(() => {
     if (isLogged === false) {
       navigate("/");
     }
   }, [isLogged, navigate]);
+
+   useEffect(() => {
+    if (localStorage.getItem("userIsLoggedIn") === "true") setIsLogged(true);
+  }, []);
+
+
+
   return (
-    <LoginContext.Provider value={{ isLogged, setIsLogged, logIn, logOut }}>
+    <LoginContext.Provider value={{ isLogged, setIsLogged, logIn, logOut, invest, setInvest, selectedInvest, setSelectedInvest}}>
       {children}
     </LoginContext.Provider>
   );
