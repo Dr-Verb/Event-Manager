@@ -26,7 +26,7 @@ const LoginProvider = ({ children }) => {
   useEffect(() => {
     if (isLogged === false) {
       navigate("/");
-    }
+    }else navigate("/events");
   }, [isLogged, navigate]);
 
    useEffect(() => {

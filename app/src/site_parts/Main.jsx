@@ -8,7 +8,7 @@ import LoginForm from './../components/LoginForm';
 function Main(){
     return (
         <main className='main'> 
-            <Menu_left/>
+            {/* <Menu_left/> */}
             <Outlet/>
             
             

@@ -5,6 +5,9 @@ import { useParams } from 'react-router-dom';
 import { LoginContext } from './context';
 import useGetEvents from './hooks/useGetEvents';
 // import { EventsList } from './components/EventsList';
+import LoginForm from './components/LoginForm';
+// import eventsList from './components/EventsList';
+import EventsList from './components/EventsList';
 
 
 
@@ -21,15 +24,16 @@ function Events(){
     return (
         <>
         {!isLogged && <>Strona dla zalogowanych użytkowników!!</>}
-        {(eventNum === undefined || "all") ? "Cała Lista" : "Zły parametr"}
-        LISTA ZGŁOSZEŃ {eventNum} 
+        {/* {(eventNum === undefined || "all") ? "Cała Lista" : "Zły parametr"}
+        LISTA ZGŁOSZEŃ {eventNum}  */}
         {/* {console.log(eventNum)} */}
 
-        <button style={({display: 'block', height: '20px'})}type="submit" onClick={handleGetEvents}>
+        {/* <button style={({display: 'block', height: '20px'})}type="submit" onClick={handleGetEvents}>
             pobierz dane
-          </button>
+          </button> */}
          <hr/>
-          {/* <EventsList/> */}
+          <EventsList EventsArr={events}/>
+          {/* {console.log(events)}; */}
 
         </>
     )

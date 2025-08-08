@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { EventsContext, LoginContext } from "../context";
 import { LOCAL_URL } from "../services/links";
 
@@ -8,8 +8,12 @@ const useGetEvents = (invest) => {
   const {setEventsList, setIsLoading } = useContext(EventsContext);
   const [events, setEvents] = useState([]);
 
-  const handleGetEvents = async (e) => {
+  const handleGetEvents = (e) => { //do ręcznego pobierania buttonem
     e.preventDefault();
+    getEvents();
+  }
+
+  const getEvents = async () => {
     setIsLoading(true);
     if (isLogged) {
       const url = `${LOCAL_URL}/events?invest=${selectedInvest}`;
@@ -26,7 +30,7 @@ const useGetEvents = (invest) => {
           .then((data)=>{
             if (data.length > 0) {
                 setEvents(data);
-                //   zapytanie przeszło mamy wyniki
+                //   zapytanie przeszło mamy wyniki :)
             } else {
               console.error(`Załadowane dane są puste`);
             }}
@@ -45,8 +49,13 @@ const useGetEvents = (invest) => {
     };
   };
 
+    useEffect(() => {
+    getEvents();
+  }, [selectedInvest]);
+
 
   return {
+    events,
     handleGetEvents,
     isLogged,
   };
