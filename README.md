@@ -27,10 +27,10 @@ _Aplikacja miała by za zadanie wspierać pracę i organizację pracy w dziale g
 - [X] Aplikacja musi wykorzystywać stan lokalny.
 - [X] Poprawne zarządzanie stanem aplikacji (Redux, Context API, itp.).
 - [X] Aplikacja wykorzystuje odpowiednie lifecycle methods lub hooki (np. useEffect) do zarządzania cyklem życia komponentów.
-- [ ] Poprawna obsługa formularzy - zarówno kontrolowanych jak i niekontrolowanych, w zależności od potrzeb projektu.
+- [X] Poprawna obsługa formularzy - zarówno kontrolowanych jak i niekontrolowanych, w zależności od potrzeb projektu.
 - [X] Wykorzystanie routingu - aplikacja ma odpowiednio skonfigurowane routy przy użyciu React Router lub innej biblioteki do routingu.
 - [ ] Aplikacja jest responsywna - poprawne dostosowanie wyglądu do różnych rozmiarów ekranu za pomocą CSS media queries lub bibliotek do responsywnego designu.
-- [ ] Brak występowania błędów krytycznych na poziomie konceptualnym - aplikacja działa zgodnie z oczekiwaniami i nie zawiera fundamentalnych błędów logicznych
+- [X] Brak występowania błędów krytycznych na poziomie konceptualnym - aplikacja działa zgodnie z oczekiwaniami i nie zawiera fundamentalnych błędów logicznych
 
 ___
 
@@ -73,3 +73,4 @@ ___
 + _06.08.2025r. - Dodoanie rekordów do bazy danych_
 + _07.08.2025r. - Przebudowanie rekordów w bazie danych; Testy poprawności pobieranych danych; Poprawki w Logowaniu_ 
 + _08.08.2025r. - Dołożony wybór inwestycji i pobieranie pozostałych danych w zależności od wybranej inwestycji; Wyświetlanie zgłoszeń z danej inwestycji; Wykonano paginację wyświetlanych wyników; rozszerzono baze danych aby przetestować paginację; Dodano bibliotekę ZOD, która będzie wykorzystywana do sprawdzania formularzy (przy rejestracji Użytkownika) do package.json_
++ _09.08.2025r. - Przebudowano bazę danych; zmodyfikowano wyświetlanie danych; dołożono formularz oraz logikę dodawania zgłoszeń gwarancyjnych; Ponownie przebudowano bazę danych; Naprawiono problem z brakiem lokalnej aktualizacji wyświetlanych zgłoszeń; Wstępnie poprawiono widok_

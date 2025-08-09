@@ -2,38 +2,36 @@ import React, { useContext } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'; 
 import { useParams } from 'react-router-dom';
-import { LoginContext } from './context';
-import useGetEvents from './hooks/useGetEvents';
+import { EventsContext, LoginContext } from './context';
+import useGetAddEvents from './hooks/useGetAddEvents';
 // import { EventsList } from './components/EventsList';
 import LoginForm from './components/LoginForm';
 // import eventsList from './components/EventsList';
 import EventsList from './components/EventsList';
-
+import { useEffect } from 'react';
 
 
 function Events(){
     const { 
         handleGetEvents,
-        events
-    } = useGetEvents("MZW");
+        getEvents,
+        events,
+        addEvent
+    } = useGetAddEvents("MZW");
+    const {eventsList} = useContext(EventsContext);
 
 
 
     const { eventNum } = useParams();
-    const { isLogged } = useContext(LoginContext);
+    const { isLogged, selectedInvest } = useContext(LoginContext);
+
+
+
     return (
         <>
         {!isLogged && <>Strona dla zalogowanych użytkowników!!</>}
-        {/* {(eventNum === undefined || "all") ? "Cała Lista" : "Zły parametr"}
-        LISTA ZGŁOSZEŃ {eventNum}  */}
-        {/* {console.log(eventNum)} */}
-
-        {/* <button style={({display: 'block', height: '20px'})}type="submit" onClick={handleGetEvents}>
-            pobierz dane
-          </button> */}
          <hr/>
-          <EventsList EventsArr={events}/>
-          {/* {console.log(events)}; */}
+          <EventsList EventsArr={events} addEvent={addEvent}/>
 
         </>
     )

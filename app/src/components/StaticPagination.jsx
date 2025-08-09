@@ -28,14 +28,14 @@ const StaticPagination = ({ max = 1, currentPage = 1}) => {
       setPaginationNumbers((prewPaginationNumbers) => [...prewPaginationNumbers, i+1]);
     };
 
-  }, []);      
+  }, [max]);      
   
 
-  return (<>Strona<br/>
+  return (<div>Strona<br/>
   {paginationNumbers.map( (numPage, index) => 
       <NavLink key={index} realtive to={`?page=${numPage}`} style={({ isActive }) => isActive ? activeStyle : commonStyle}>{numPage}</NavLink>
   )}
-  </>
+  </div>
   );
 };
 export default StaticPagination;
