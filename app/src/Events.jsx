@@ -16,8 +16,10 @@ function Events(){
         handleGetEvents,
         getEvents,
         events,
-        addEvent
-    } = useGetAddEvents("MZW");
+        addEvent,
+        editEvent,
+        deleteEvent,
+    } = useGetAddEvents();
     const {eventsList} = useContext(EventsContext);
 
 
@@ -31,7 +33,7 @@ function Events(){
         <>
         {!isLogged && <>Strona dla zalogowanych użytkowników!!</>}
          <hr/>
-          <EventsList EventsArr={events} addEvent={addEvent}/>
+          <EventsList EventsArr={events} addEvent={addEvent} editEvent={editEvent} deleteEvent={deleteEvent}/>
 
         </>
     )

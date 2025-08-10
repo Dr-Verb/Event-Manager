@@ -74,3 +74,4 @@ ___
 + _07.08.2025r. - Przebudowanie rekordów w bazie danych; Testy poprawności pobieranych danych; Poprawki w Logowaniu_ 
 + _08.08.2025r. - Dołożony wybór inwestycji i pobieranie pozostałych danych w zależności od wybranej inwestycji; Wyświetlanie zgłoszeń z danej inwestycji; Wykonano paginację wyświetlanych wyników; rozszerzono baze danych aby przetestować paginację; Dodano bibliotekę ZOD, która będzie wykorzystywana do sprawdzania formularzy (przy rejestracji Użytkownika) do package.json_
 + _09.08.2025r. - Przebudowano bazę danych; zmodyfikowano wyświetlanie danych; dołożono formularz oraz logikę dodawania zgłoszeń gwarancyjnych; Ponownie przebudowano bazę danych; Naprawiono problem z brakiem lokalnej aktualizacji wyświetlanych zgłoszeń; Wstępnie poprawiono widok_
++ _10.09.2025r. - dodano funkcję usówania zgłoszeń oraz wstąpnie funkcję do edycji zdarzeń przesłąno ponownie bazę danych bo powodowała błędy._

@@ -41,7 +41,7 @@ function NavBar(){
     return (
         
         <div> 
-             <NavLink end to="/events" style={({ isActive }) => isActive ? activeStyle : commonStyle}> Zgłoszenia </NavLink> 
+             <NavLink end to={"/events"} style={({ isActive }) => isActive ? activeStyle : commonStyle}> Zgłoszenia </NavLink> 
              dotyczące inwestycji: 
              <select value={selectedInvest} onChange={(e) => setSelectedInvest(e.target.value)}>
                 {invest.map((item)=> <option key= {item} value={item}>{item}</option>)}

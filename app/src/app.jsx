@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './Home';
 import Events from './Events';
-// import HelloYou from './HelloYou';
-// import CheckAge from './CheckAge';
+
 
 function App() {
     return (

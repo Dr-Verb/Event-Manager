@@ -8,5 +8,5 @@
 ////////////////////////////////////////////////////
 
 // export const LOCAL_URL = "http://localhost:5001";
-export const LOCAL_URL = "http://192.168.18.6:3001"; // Wystawiałem do podglądu w sieci lokalnej :) ale po zmianie IP należy aktualizować ip tu + w package.json od serwera
+export const LOCAL_URL = "http://192.168.18.5:3001"; // Wystawiałem do podglądu w sieci lokalnej :) ale po zmianie IP należy aktualizować ip tu + w package.json od serwera
 

@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import { EventsContext, LoginContext } from "../context";
 import { LOCAL_URL } from "../services/links";
 
-const useGetAddEvents = (invest) => {
+const useGetAddEvents = () => {
   // const [invest, setInvest] = useState("MZW"); //wartośc domyśłna tylko do testów usunąć
   const { isLogged, selectedInvest } = useContext(LoginContext);
   const {setEventsList, setIsLoading } = useContext(EventsContext);
@@ -94,8 +94,60 @@ const useGetAddEvents = (invest) => {
         return false;
         }
     }
+  ///////////////////////////// Funkcja edytująca 
+
+    const editEvent = async (sendingData, id) => {
+      setLoading(true);
+        setError(null);
+
+        try {
+
+        const response = await fetch(`${LOCAL_URL}/events/${id}`, {
+            //method: 'PATCH',
+            method: "PUT", 
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(sendingData),
+        });
+        
 
 
+
+        if (!response.ok) {
+            throw new Error("Failed to adding new event.");
+        } else {
+          const data = response.json();
+          console.log("Edytowano zgłoszenie");
+          setEvents((prevEvents)=> [data, ...prevEvents.filter( (event) => event.id !== id )]);//.sort((evnt1, evnt2) => evnt1.id - evnt2.id));
+        } 
+        
+        setLoading(false);
+        return true;
+        } catch (e) {
+        setError(e.message);
+        setLoading(false);
+        return false;
+        }
+    }
+
+
+    //////////////////////// Delete
+    function deleteEvent(id) {
+    fetch(`${LOCAL_URL}/events/${id}`, {
+      method: 'DELETE',
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+
+        throw new Error(`Error: Cannot DELETE Event id: ${id}`);
+      })
+      .then((data) => {
+        console.log(data);
+        setEvents((prevEvents) => [...prevEvents.filter((evnt) => evnt.id !== id)]);
+      })
+      .catch((error) => console.error(error));
+  }
 
 
 
@@ -104,11 +156,12 @@ const useGetAddEvents = (invest) => {
     events,
     handleGetEvents,
     getEvents,
-    addEventToEvents,
     isLogged,
-    addEvent, //z add
-    loading,  //z add
-    error     //z add
+    addEvent,
+    editEvent,
+    deleteEvent, 
+    loading,  
+    error 
   };
 };
 
